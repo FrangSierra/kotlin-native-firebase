@@ -1,7 +1,12 @@
 package sample
 
+import cocoapods.AFNetworking.AFHTTPRequestSerializer
+
 actual class Sample {
-    actual fun checkMe() = 7
+    actual fun checkMe(): Int {
+        AFHTTPRequestSerializer.serializer()
+        return 7
+    }
 }
 
 actual object Platform {

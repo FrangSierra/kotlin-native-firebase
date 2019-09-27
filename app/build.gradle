@@ -38,12 +38,19 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
 }
 
+def iosTarget(String) {
+    if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
+        return KotlinNativeTarget.iosArm64()
+    else
+        return KotlinNativeTarget.iosX64()
+}
+
 kotlin {
     targets {
         fromPreset(presets.android, 'android')
         // This preset is for iPhone emulator
         // Switch here to presets.iosArm64 (or iosArm32) to build library for iPhone device
-        fromPreset(presets.iosX64, 'ios') {
+        fromPreset((System.getenv("SDK_NAME")?.startsWith("iphoneos") == true) ? presets.iosArm64 : presets.iosX64, 'ios') {
             compilations.main.outputKinds('FRAMEWORK')
         }
     }
@@ -79,7 +86,6 @@ kotlin {
             }
             dependencies {
                 implementation 'com.google.firebase:firebase-firestore:21.1.1'
-                implementation 'cocoapods.AFNetworking'
             }
         }
         iosTest {
