@@ -12,7 +12,8 @@ Pod::Spec.new do |spec|
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
-    spec.dependency 'AFNetworking'
+    spec.dependency 'Firebase/Analytics'
+    spec.dependency 'Firebase/Auth'
 
     spec.pod_target_xcconfig = {
         'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x64',

@@ -150,3 +150,12 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+iosApp/Pods/*
+Podfile.lock
+kotlin-library/kotlin_library.podspec
+iosApp/iosApp.xcodeproj/xcuserdata
+iosApp/iosApp.xcworkspace/xcuserdata
+iosApp/iosApp.xcodeproj/project.xcworkspace/xcuserdata
+iosApp/iosApp.xcworkspace/contents.xcworkspacedata
+iosApp/iosApp.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist

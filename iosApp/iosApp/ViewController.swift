@@ -1,6 +1,5 @@
 import UIKit
 import app
-import AFNetworking
 
 class ViewController: UIViewController {
     override func viewDidLoad() {

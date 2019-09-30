@@ -14,7 +14,10 @@
   "libraries": "c++",
   "module_name": "app_umbrella",
   "dependencies": {
-    "AFNetworking": [
+    "Firebase/Analytics": [
+
+    ],
+    "Firebase/Auth": [
 
     ]
   },
