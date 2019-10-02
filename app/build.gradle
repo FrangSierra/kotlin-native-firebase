@@ -88,6 +88,7 @@ kotlin {
                 // Configure fields required by CocoaPods.
                 summary = "This is a test for elu"
                 homepage = "Link to a Kotlin/Native module homepage"
+                pod ('FirebaseCore')
                 pod ('FirebaseAuth')
             }
             dependencies {
