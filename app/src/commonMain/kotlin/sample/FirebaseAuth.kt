@@ -1,6 +1,6 @@
 package sample
 
-expect class FirebaseAuth() {
+expect class Auth() {
     fun createUserWithEmailAndPassword(email : String, password : String, onComplete : (FirebaseUser?) -> Unit, onError : (Exception?) -> Unit)
 }
 

@@ -5,7 +5,7 @@ import cocoapods.FirebaseAuth.FIRAuthDataResult
 import cocoapods.FirebaseAuth.FIRAuthDataResultCallback
 import platform.Foundation.NSError
 
-actual class FirebaseAuth {
+actual class Auth {
     actual fun createUserWithEmailAndPassword(email: String, password: String, onComplete: (FirebaseUser?) -> Unit, onError : (Exception?) -> Unit) {
         FIRAuth.auth()
             .createUserWithEmail(email = email, password = password, completion = object : FIRAuthDataResultCallback {

@@ -51,7 +51,22 @@ kotlin {
         // This preset is for iPhone emulator
         // Switch here to presets.iosArm64 (or iosArm32) to build library for iPhone device
         fromPreset((System.getenv("SDK_NAME")?.startsWith("iphoneos") == true) ? presets.iosArm64 : presets.iosX64, 'ios') {
-            compilations.main.outputKinds('FRAMEWORK')
+            compilations.main {
+                outputKinds('FRAMEWORK')
+                cinterops {
+                    firebase {
+                        defFile "$projectDir/src/iosMain/cinterop/firebase.def"
+                        includeDirs {
+                            allHeaders "$projectDir/../iosApp/Pods/FirebaseCore/Firebase/Core/Public",
+                                    "$projectDir/../iosApp/Pods/FirebaseAuth/Firebase/Auth/Source/Public"
+                        }
+
+                        compilerOpts "-F$projectDir/../iosApp/Pods/FirebaseCore -F$projectDir/../iosApp/Pods/FirebaseAuth"
+                        linkerOpts "-F$projectDir/../iosApp/Pods/FirebaseCore -F$projectDir/../iosApp/Pods/FirebaseAuth"
+                    }
+                }
+
+            }
         }
     }
     sourceSets {
@@ -82,7 +97,6 @@ kotlin {
                 // Configure fields required by CocoaPods.
                 summary = "This is a test for elu"
                 homepage = "Link to a Kotlin/Native module homepage"
-                pod ('FirebaseAnalytics')
                 pod ('FirebaseCore')
                 pod ('FirebaseAuth')
             }

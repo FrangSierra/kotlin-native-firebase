@@ -12,8 +12,8 @@ Pod::Spec.new do |spec|
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
-    spec.dependency 'Firebase/Analytics'
-    spec.dependency 'Firebase/Auth'
+    spec.dependency 'FirebaseAuth'
+    spec.dependency 'FirebaseCore'
 
     spec.pod_target_xcconfig = {
         'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x64',
@@ -35,6 +35,7 @@ Pod::Spec.new do |spec|
                     -Pkotlin.native.cocoapods.cflags="$OTHER_CFLAGS" \
                     -Pkotlin.native.cocoapods.paths.headers="$HEADER_SEARCH_PATHS" \
                     -Pkotlin.native.cocoapods.paths.frameworks="$FRAMEWORK_SEARCH_PATHS"
+                    --debug
             SCRIPT
         }
     ]
