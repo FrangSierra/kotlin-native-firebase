@@ -1,7 +1,6 @@
 PODS:
   - app (1.0):
     - FirebaseAuth
-    - FirebaseCore
   - FirebaseAuth (6.2.3):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.2)
@@ -66,7 +65,7 @@ EXTERNAL SOURCES:
     :path: "../app"
 
 SPEC CHECKSUMS:
-  app: 091f7b6ba343a5b039a63f374ecc969d4efc65b2
+  app: bfea4506cc89d37c28ba7294b5492175ff3f00b7
   FirebaseAuth: e7f86c2dfc57281cd01f7da5e4b40e01e4510a4a
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 8b2765c445d40db7137989b7146a3aa3f91b5529
@@ -78,6 +77,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 1b04408c2ad0991d4fa36564a00f262078f58456
+PODFILE CHECKSUM: 6ea49b2182388aa366ae52527d23bf334531fe0f
 
 COCOAPODS: 1.7.4
