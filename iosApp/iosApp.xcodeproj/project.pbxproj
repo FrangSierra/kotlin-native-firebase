@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1264BBBC2344A93900433E36 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1264BBA92344A93900433E36 /* Pods_iosApp.framework */; };
+		1264BBBD2344A93900433E36 /* Pods_iosApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1264BBA92344A93900433E36 /* Pods_iosApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		414EBD0794501AB29AE6FFD8 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7FE545A69BF49AD3BB4483 /* Pods_iosApp.framework */; };
 		F4A2C6B42344996800FB1FBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4A2C6B32344996800FB1FBF /* GoogleService-Info.plist */; };
 		F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7E0207FA40F0085E80D /* AppDelegate.swift */; };
@@ -26,7 +28,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1264BBBE2344A93900433E36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1264BBBD2344A93900433E36 /* Pods_iosApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1264BBA02344A93900433E36 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA12344A93900433E36 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA22344A93900433E36 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA32344A93900433E36 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA42344A93900433E36 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA52344A93900433E36 /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA62344A93900433E36 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA72344A93900433E36 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA82344A93900433E36 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1264BBA92344A93900433E36 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F59DFC33F85F81F7249DF53 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7FE545A69BF49AD3BB4483 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52FCBE913A3132423200350 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				414EBD0794501AB29AE6FFD8 /* Pods_iosApp.framework in Frameworks */,
+				1264BBBC2344A93900433E36 /* Pods_iosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +101,16 @@
 		DECB78A12367C117B0F66490 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1264BBA02344A93900433E36 /* FirebaseAuth.framework */,
+				1264BBA12344A93900433E36 /* FirebaseCore.framework */,
+				1264BBA22344A93900433E36 /* FirebaseCoreDiagnostics.framework */,
+				1264BBA32344A93900433E36 /* FirebaseInstanceID.framework */,
+				1264BBA42344A93900433E36 /* GoogleDataTransport.framework */,
+				1264BBA52344A93900433E36 /* GoogleDataTransportCCTSupport.framework */,
+				1264BBA62344A93900433E36 /* GoogleUtilities.framework */,
+				1264BBA72344A93900433E36 /* GTMSessionFetcher.framework */,
+				1264BBA82344A93900433E36 /* nanopb.framework */,
+				1264BBA92344A93900433E36 /* Pods_iosApp.framework */,
 				BB7FE545A69BF49AD3BB4483 /* Pods_iosApp.framework */,
 			);
 			name = Frameworks;
@@ -134,6 +171,7 @@
 				F861D7DA207FA40F0085E80D /* Frameworks */,
 				F861D7DB207FA40F0085E80D /* Resources */,
 				5E06E9702B65FCB09125DAB0 /* [CP] Embed Pods Frameworks */,
+				1264BBBE2344A93900433E36 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -431,15 +469,35 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F59DFC33F85F81F7249DF53 /* Pods-iosApp.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6QD3VXEJC;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"/**",
+					"\"${PODS_ROOT}/../../app/build/cocoapods/framework\"/**",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"/**",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"/**",
+				);
 				INFOPLIST_FILE = iosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-v";
+				OTHER_LDFLAGS = (
+					"-v",
+					"-framework",
+					FirebaseCore,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.minuscorp.iosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -452,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D52FCBE913A3132423200350 /* Pods-iosApp.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6QD3VXEJC;
 				ENABLE_BITCODE = NO;
@@ -460,7 +519,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-v";
+				OTHER_LDFLAGS = (
+					"-v",
+					"-framework",
+					FirebaseCore,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.minuscorp.iosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

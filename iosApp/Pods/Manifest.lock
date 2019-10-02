@@ -1,26 +1,7 @@
 PODS:
   - app (1.0):
-    - Firebase/Analytics
-    - Firebase/Auth
-  - Firebase/Analytics (6.9.0):
-    - Firebase/Core
-  - Firebase/Auth (6.9.0):
-    - Firebase/CoreOnly
-    - FirebaseAuth (~> 6.2.3)
-  - Firebase/Core (6.9.0):
-    - Firebase/CoreOnly
-    - FirebaseAnalytics (= 6.1.2)
-  - Firebase/CoreOnly (6.9.0):
-    - FirebaseCore (= 6.3.0)
-  - FirebaseAnalytics (6.1.2):
-    - FirebaseCore (~> 6.3)
-    - FirebaseInstanceID (~> 4.2)
-    - GoogleAppMeasurement (= 6.1.2)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (~> 0.3)
+    - FirebaseAuth
+    - FirebaseCore
   - FirebaseAuth (6.2.3):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.2)
@@ -39,16 +20,6 @@ PODS:
     - GoogleUtilities/Environment (~> 6.2)
     - GoogleUtilities/Logger (~> 6.2)
   - FirebaseCoreDiagnosticsInterop (1.0.0)
-  - FirebaseInstanceID (4.2.5):
-    - FirebaseCore (~> 6.0)
-    - GoogleUtilities/Environment (~> 6.0)
-    - GoogleUtilities/UserDefaults (~> 6.0)
-  - GoogleAppMeasurement (6.1.2):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (~> 0.3)
   - GoogleDataTransport (2.0.0)
   - GoogleDataTransportCCTSupport (1.1.0):
     - GoogleDataTransport (~> 2.0)
@@ -60,16 +31,12 @@ PODS:
   - GoogleUtilities/Environment (6.3.0)
   - GoogleUtilities/Logger (6.3.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.3.0):
-    - GoogleUtilities/Logger
   - GoogleUtilities/Network (6.3.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
   - "GoogleUtilities/NSData+zlib (6.3.0)"
   - GoogleUtilities/Reachability (6.3.0):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (6.3.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.2)
   - nanopb (0.3.901):
@@ -82,16 +49,12 @@ DEPENDENCIES:
   - app (from `../app`)
 
 SPEC REPOS:
-  trunk:
-    - Firebase
-    - FirebaseAnalytics
+  https://github.com/cocoapods/specs.git:
     - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
-    - FirebaseInstanceID
-    - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
@@ -103,16 +66,12 @@ EXTERNAL SOURCES:
     :path: "../app"
 
 SPEC CHECKSUMS:
-  app: b7565cb23f5f93e8d6f131b2a83aba71314b07b1
-  Firebase: 2d750c54cda57d5a6ae31212cfe5cc813c6be7e4
-  FirebaseAnalytics: 5d9ccbf46ed25d3ec9304d263f85bddf1e93e2d2
+  app: 091f7b6ba343a5b039a63f374ecc969d4efc65b2
   FirebaseAuth: e7f86c2dfc57281cd01f7da5e4b40e01e4510a4a
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 8b2765c445d40db7137989b7146a3aa3f91b5529
   FirebaseCoreDiagnostics: be4f7a09d02ab305f18de59a470412caddb64c2a
   FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
-  FirebaseInstanceID: 550df9be1f99f751d8fcde3ac342a1e21a0e6c42
-  GoogleAppMeasurement: 0ae90be1cc4dad40f4a27fc767ef59fa032ec87b
   GoogleDataTransport: c8617c00e4f3eb9418e42ac0e8ac5241a9d555dd
   GoogleDataTransportCCTSupport: 9f352523e8785a71f6754f51eeff09f49ec19268
   GoogleUtilities: 9c2c544202301110b29f7974a82e77fdcf12bf51
@@ -121,4 +80,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1b04408c2ad0991d4fa36564a00f262078f58456
 
-COCOAPODS: 1.8.0
+COCOAPODS: 1.7.4
