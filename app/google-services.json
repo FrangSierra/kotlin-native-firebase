@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "393348034046",
+    "firebase_url": "https://native-poc.firebaseio.com",
+    "project_id": "native-poc",
+    "storage_bucket": "native-poc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393348034046:android:8f79eb85ce5e88846864af",
+        "android_client_info": {
+          "package_name": "org.jetbrains.kotlin.mpp_app_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393348034046-odudvma1106kquu60e7uuvmtl8nuf52k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYvlRKbS9IOFR2SauSXza4WHQ5n1xGQyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393348034046-odudvma1106kquu60e7uuvmtl8nuf52k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "393348034046-im68l9j03mh37h7oqnakb0arbmf8qhav.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.minuscorp.iosApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
