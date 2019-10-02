@@ -1,7 +1,7 @@
 package sample
 
 expect class FirebaseAuth() {
-    fun signInWithEmailAndPassword(email : String, password : String, onComplete : (FirebaseUser?) -> Unit)
+    fun createUserWithEmailAndPassword(email : String, password : String, onComplete : (FirebaseUser?) -> Unit, onError : (Exception?) -> Unit)
 }
 
 data class FirebaseUser(val id : String, val name : String?)

@@ -7,8 +7,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import java.util.*
 import android.os.Looper
 
 class MainActivity : AppCompatActivity() {
@@ -16,11 +14,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val email = UUID.randomUUID().toString() + "@gmail.com"
+        val email = "frangsierra@gmail.com"
+        print("Current email = $email")
         GlobalScope.launch(Dispatchers.IO) {
-            FirebaseAuth().signInWithEmailAndPassword(email, "123456") { user ->
-                Handler(Looper.getMainLooper()).post(Runnable { hello.text = user?.id.toString()})
-            }
+            FirebaseAuth().createUserWithEmailAndPassword(email, "123456", onComplete = { user ->
+                Handler(Looper.getMainLooper()).post { hello.text = user?.id.toString() }
+                print("Current user ID = ${user?.id}")
+            }, onError = {
+                Handler(Looper.getMainLooper()).post { hello.text = it?.toString() }
+                print("Current error = $it")
+            })
         }
     }
 }

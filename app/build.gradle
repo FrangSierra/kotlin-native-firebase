@@ -83,6 +83,7 @@ kotlin {
                 summary = "This is a test for elu"
                 homepage = "Link to a Kotlin/Native module homepage"
                 pod ('FirebaseAnalytics')
+                pod ('FirebaseCore')
                 pod ('FirebaseAuth')
             }
             dependencies {
